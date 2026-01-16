@@ -1,0 +1,32 @@
+<nav class="navbar">
+  <div class="container">
+
+    <a routerLink="/" class="logo">
+      CHAMOD<span>.</span> </a>
+
+    <div class="menu-icon" (click)="toggleMenu()">
+      <i class="fas" [class.fa-times]="isMenuOpen" [class.fa-bars]="!isMenuOpen"></i>
+    </div>
+
+    <ul class="nav-links" [class.active]="isMenuOpen">
+
+      <li>
+        <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"(click)="closeMenu()">Home</a>
+      </li>
+
+      <li>
+        <a routerLink="/about" routerLinkActive="active-link" (click)="closeMenu()">About</a>
+      </li>
+
+      <li>
+        <a routerLink="/projects" routerLinkActive="active-link" (click)="closeMenu()">Portfolio</a>
+      </li>
+
+      <li>
+        <a routerLink="/contact" routerLinkActive="active-link" (click)="closeMenu()">Contact</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
