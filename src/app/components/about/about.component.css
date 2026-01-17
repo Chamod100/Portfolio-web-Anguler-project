@@ -1,0 +1,159 @@
+.about-section {
+  background-color: #f9f9f9;
+  color: #000;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title-box {
+  display: inline-block;
+  border: 3px solid #000;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+
+.title-box h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.separator {
+  position: relative;
+  text-align: center;
+  margin: 40px 0;
+  font-weight: bold;
+  color: #777;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: repeating-linear-gradient(to right, #ccc, #ccc 5px, transparent 5px, transparent 10px);
+  /* Dashed Line එක */
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.service-item {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+  padding: 20px;
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.service-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service-item p {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.mt-5 {
+  margin-top: 80px;
+}
+
+.skill-category {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  color: #333;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.skill-item {
+  text-align: center;
+  width: 80px;
+}
+
+.skill-item i {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.skill-item i:hover {
+  transform: scale(1.1);
+}
+
+.skill-item p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    text-align: center;
+  }
+
+  .separator::before,
+  .separator::after {
+    width: 30%;
+  }
+}
