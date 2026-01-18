@@ -1,0 +1,57 @@
+/* මුළු Footer එකම */
+.footer-section {
+    background-color: #000; /* තද කළු පාට */
+    color: #fff; /* අකුරු සුදු පාට */
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #333; /* උඩින් පොඩි ඉරක් */
+    margin-top: auto; /* හැමවෙලේම පල්ලෙහාට යන්න */
+}
+
+/* Social Icons */
+.footer-socials {
+    margin-bottom: 20px;
+}
+
+.footer-socials a {
+    color: #fff; /* අයිකන් සුදු පාට */
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* මවුස් එක ගෙනිච්චම අයිකන් එක පාට වෙනස් වෙන්න */
+.footer-socials a:hover {
+    color: #ccc; /* ලා අළු පාට */
+    transform: translateY(-3px); /* පොඩ්ඩක් උඩට පනින්න */
+}
+
+/* Copyright Text */
+.footer-copyright p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #888; /* අකුරු තද සුදු නැතුව අළු පාටින් */
+}
+
+.footer-copyright strong {
+    color: #fff; /* නම විතරක් තද සුදු පාටින් */
+}
+
+.designed-by {
+    font-size: 0.8rem !important;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 30px 0;
+    }
+    
+    .footer-socials a {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+}
